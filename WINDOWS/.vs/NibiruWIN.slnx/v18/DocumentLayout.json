@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Nibiru\\WINDOWS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\framework\\elements\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\framework\\elements\\uibutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\framework\\parser\\jsonatomparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\framework\\parser\\jsonatomparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\framework\\uiatom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\framework\\uiatom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\framework\\elements\\uitext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\framework\\elements\\uitext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|e:\\nibiru\\windows\\nibiruwin_runtime\\framework\\layout\\uistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55FC57D3-3F85-1711-F03F-AAB08ABDD81B}|NibiruWIN_Runtime\\NibiruWIN_Runtime.csproj|solutionrelative:nibiruwin_runtime\\framework\\layout\\uistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIButton.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Elements\\UIButton.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\Framework\\Elements\\UIButton.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Elements\\UIButton.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\Framework\\Elements\\UIButton.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T17:16:58.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\MainWindow.xaml.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\MainWindow.xaml.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T17:16:06.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JsonAtomParser.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Parser\\JsonAtomParser.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\Framework\\Parser\\JsonAtomParser.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Parser\\JsonAtomParser.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\Framework\\Parser\\JsonAtomParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T17:00:28.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIText.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Elements\\UIText.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\Framework\\Elements\\UIText.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Elements\\UIText.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\Framework\\Elements\\UIText.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T16:58:24.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIStack.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Layout\\UIStack.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\Framework\\Layout\\UIStack.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\Layout\\UIStack.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\Framework\\Layout\\UIStack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T16:58:22.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UIAtom.cs",
+              "DocumentMoniker": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\UIAtom.cs",
+              "RelativeDocumentMoniker": "NibiruWIN_Runtime\\Framework\\UIAtom.cs",
+              "ToolTip": "E:\\Nibiru\\WINDOWS\\NibiruWIN_Runtime\\Framework\\UIAtom.cs",
+              "RelativeToolTip": "NibiruWIN_Runtime\\Framework\\UIAtom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T16:43:44.76Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

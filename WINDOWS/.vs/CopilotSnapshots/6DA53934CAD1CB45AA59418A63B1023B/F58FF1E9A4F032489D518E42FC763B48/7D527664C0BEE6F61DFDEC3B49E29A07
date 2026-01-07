@@ -1,0 +1,57 @@
+﻿using NibiruWIN_Runtime.Framework.Elements;
+using NibiruWIN_Runtime.Framework.Layout;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.Json;
+using System.Windows.Controls;
+
+namespace NibiruWIN_Runtime.Framework.Parser
+{
+    internal class JsonAtomParser
+    {
+        public static UIAtom Parse(string json)
+        {
+            using var doc = JsonDocument.Parse(json);
+            return ParseElement(doc.RootElement);
+        }
+
+        private static UIAtom ParseElement(JsonElement element)
+        {
+            string type = element.GetProperty("type").GetString();
+
+            UIAtom atom = type switch
+            {
+                "stack" => new UIStack
+                {
+                    Orientation = element.TryGetProperty("orientation", out var o) 
+                        ? (o.GetString() == "horizontal" ? Orientation.Horizontal : Orientation.Vertical)
+                        : Orientation.Vertical
+                },
+                "text" => new UIText
+                {
+                    Text = element.GetProperty("text").GetString()
+                },
+                _ => null
+            };
+
+            if (atom == null)
+            {
+                return null;
+            }
+
+            // Prase children
+            if (element.TryGetProperty("children", out var children))
+            {
+                foreach (var child in children.EnumerateArray())
+                {
+                    var childAtom = ParseElement(child);
+                    if (childAtom != null)
+                        atom.Children.Add(childAtom);
+                }
+            }
+
+            return atom;
+        }
+    }
+}

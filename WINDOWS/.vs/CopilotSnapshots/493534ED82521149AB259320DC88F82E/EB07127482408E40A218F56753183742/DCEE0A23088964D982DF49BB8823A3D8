@@ -1,0 +1,39 @@
+﻿using NibiruWIN_Runtime.Framework.Elements;
+using NibiruWIN_Runtime.Framework.Layout;
+using NibiruWIN_Runtime.Framework.Parser;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace NibiruWIN_Runtime
+{
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            var json = @"
+            {
+                ""type"": ""stack"",
+                ""orientation"": ""vertical"",
+                ""horizontalAlignment"": ""center"",
+                ""verticalAlignment"": ""center"",
+                ""children"": [
+                    { ""type"": ""text"", ""text"": ""Hello from JSON"" },
+                    { ""type"": ""button"", ""text"": ""This is real UI"", ""margin"": { ""left"": 0, ""top"": 10, ""right"": 0, ""bottom"": 0 } }
+                ]
+            }";
+
+            var root = JsonAtomParser.Parse(json);
+            RootContent.Content = root.Build();
+        }
+    }
+}}

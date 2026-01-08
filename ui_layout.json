@@ -1,0 +1,62 @@
+{
+  "type": "navigation",
+  "selectedIndex": 0,
+  "children": [
+    {
+      "type": "stack",
+      "children": [
+        { "type": "button", "text": "Home", "icon": "home", "position": "top" },
+        { "type": "button", "text": "Projects", "icon": "projects", "position": "top" },
+        { "type": "button", "text": "Settings", "icon": "settings", "position": "bottom" }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "type": "stack",
+      "spacing": 10,
+      "orientation": "vertical",
+      "verticalAlignment": "center",
+      "horizontalAlignment": "center",
+      "margin": { "left": 16, "top": 16, "right": 16, "bottom": 16 },
+      "children": [
+        { "type": "text", "text": "Hi there 👋", "fontSize": 32, "fontWeight": "semibold", "textAlign": "center" },
+        { "type": "text", "text": "Welcome to the application!", "textAlign": "center" },
+        {"type": "stack",
+         "orientation": "horizontal",
+         "spacing": 10,
+         "margin": { "top": 20 },
+         "children": [
+            { "type": "button", "text": "Get Started", "icon": "start"},
+            { "type": "button", "text": "Learn More", "icon": "info", "isAccent": true }
+         ]}
+      ]
+    },
+    {
+      "type": "stack",
+      "spacing": 10,
+      "orientation": "vertical",
+      "margin": { "left": 16, "top": 16, "right": 16, "bottom": 16 },
+      "children": [
+        { "type": "text", "text": "Home", "fontSize": 28, "fontWeight": "semibold" },
+        { "type": "text", "text": "Welcome to the application!" },
+        {"type": "stack",
+         "orientation": "horizontal",
+         "spacing": 10,
+         "margin": { "top": 20 },
+         "children": [
+            { "type": "button", "text": "Create Project", "icon": "add", "isAccent": true}
+         ]}
+      ]
+    },
+    {
+      "type": "stack",
+      "orientation": "vertical",
+      "margin": { "left": 20, "top": 20, "right": 20, "bottom": 20 },
+      "children": [
+        { "type": "text", "text": "Settings", "fontSize": 24 },
+        { "type": "text", "text": "Adjust your preferences here." }
+      ]
+    }
+  ]
+}

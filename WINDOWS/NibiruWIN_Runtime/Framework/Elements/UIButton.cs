@@ -11,7 +11,7 @@ namespace Nibiru.Framework
     {
         public string Text { get; set; } = "Button";
         public string? Icon { get; set; }
-        public string? Position { get; set; } // "top" or "bottom" ONLY FOR UI NAVIGATION
+        public string? Position { get; set; }
 
         public bool IsAccent { get; set; } = false;
 

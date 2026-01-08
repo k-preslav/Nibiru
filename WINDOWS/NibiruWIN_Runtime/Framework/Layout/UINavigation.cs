@@ -22,10 +22,8 @@ namespace Nibiru.Framework
                 BorderThickness = new Thickness(0)
             };
 
-            // Main panel for sidebar - use DockPanel to position buttons
             var sidebarDock = new DockPanel();
 
-            // Bottom buttons container
             var bottomStack = new StackPanel
             {
                 Margin = new Thickness(0, 6, 0, 6)
@@ -33,7 +31,6 @@ namespace Nibiru.Framework
             DockPanel.SetDock(bottomStack, System.Windows.Controls.Dock.Bottom);
             sidebarDock.Children.Add(bottomStack);
 
-            // Top buttons container (scrollable)
             var scrollViewer = new ScrollViewer
             {
                 VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
@@ -50,7 +47,6 @@ namespace Nibiru.Framework
 
             ApplyLayout(dock);
 
-            // First child is menu items
             if (Children.Count > 0)
             {
                 int globalIndex = 0;
@@ -59,7 +55,6 @@ namespace Nibiru.Framework
                     var button = child as UIButton;
                     if (button != null)
                     {
-                        // Check if button has position attribute (defaults to "top")
                         string position = !string.IsNullOrEmpty(button.Position) 
                             ? button.Position 
                             : "top";
@@ -86,7 +81,6 @@ namespace Nibiru.Framework
             DockPanel.SetDock(sidebar, System.Windows.Controls.Dock.Left);
             dock.Children.Add(sidebar);
 
-            // Create content area with content presenter
             contentPresenter = new ContentPresenter();
 
             var contentArea = new Border
@@ -100,7 +94,6 @@ namespace Nibiru.Framework
             };
             dock.Children.Add(contentArea);
 
-            // Load initial page
             LoadPage(SelectedIndex);
 
             return dock;
@@ -116,7 +109,6 @@ namespace Nibiru.Framework
             }
             else if (Children.Count > 1)
             {
-                // Fallback to second child if no pages defined
                 contentPresenter.Content = Children[1].Build();
             }
         }
@@ -124,11 +116,10 @@ namespace Nibiru.Framework
         private FrameworkElement CreateNavButton(string text, string? icon, bool isSelected, int pageIndex, StackPanel topStack, StackPanel bottomStack)
         {
             var mainGrid = new Grid();
-            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3) }); // Selection indicator
-            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(40) }); // Icon
-            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }); // Text
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(40) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-            // Selection indicator
             var selectionBar = new Border
             {
                 Width = 3,
@@ -138,7 +129,6 @@ namespace Nibiru.Framework
             Grid.SetColumn(selectionBar, 0);
             mainGrid.Children.Add(selectionBar);
 
-            // Icon (only if provided)
             if (!string.IsNullOrEmpty(icon))
             {
                 var iconText = new TextBlock
@@ -155,7 +145,6 @@ namespace Nibiru.Framework
                 mainGrid.Children.Add(iconText);
             }
 
-            // Text label
             var label = new TextBlock
             {
                 Text = text,
@@ -187,7 +176,6 @@ namespace Nibiru.Framework
                 UpdateAllButtons(topStack, bottomStack, pageIndex);
             };
 
-            // Wrap button in border for rounded corners
             var btnBorder = new Border
             {
                 Child = btn,
@@ -196,7 +184,6 @@ namespace Nibiru.Framework
                 ClipToBounds = true
             };
 
-            // Add hover effects
             btn.MouseEnter += (s, e) => {
                 if ((int?)btn.Tag != SelectedIndex)
                 {
@@ -233,10 +220,8 @@ namespace Nibiru.Framework
                         int btnPageIndex = (int?)navBtn.Tag ?? -1;
                         bool isNowSelected = btnPageIndex == selectedPageIndex;
 
-                        // Update button background
                         navBtn.Background = isNowSelected ? ThemeManager.NavButtonSelected : Brushes.Transparent;
-                        
-                        // Update selection bar and opacity
+
                         if (navBtn.Content is Grid grid && grid.Children.Count > 0)
                         {
                             if (grid.Children[0] is Border selBar)
